@@ -1,0 +1,19 @@
+<h1>Editing friend</h1>
+
+<br>
+
+<%= render "form", friend: @friend %>
+
+<br>
+
+<div>
+  <%= link_to "Show", @friend , class:"btn btn-secondary"%>
+
+  <br> <br>
+
+  <%= button_to 'Delete', @friend, method: :delete, :onclick => "return confirm('Are you sure you want to delete this post?')", class: "btn btn-danger" %> 
+
+  <br>
+
+  <%= link_to "Back", friends_path, class:"btn btn-secondary"%>
+</div>
